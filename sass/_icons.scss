@@ -1,0 +1,97 @@
+@font-face {
+	font-family: "icons";
+	src: url('../fonts/icons/icons.eot');
+	src: url('../fonts/icons/icons.eot?#iefix') format('eot'),
+		url('../fonts/icons/icons.woff') format('woff'),
+		url('../fonts/icons/icons.ttf') format('truetype');
+}
+
+@mixin ico-styles {
+	font-family: "icons";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	// speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+	text-decoration: none;
+	text-transform: none;
+}
+
+%ico {
+	@include ico-styles;
+}
+
+@function ico-char($filename) {
+	$char: "";
+
+	@if $filename == cell {
+		$char: "\E001";
+	}
+	@if $filename == close {
+		$char: "\E002";
+	}
+	@if $filename == email {
+		$char: "\E003";
+	}
+	@if $filename == in {
+		$char: "\E004";
+	}
+	@if $filename == left {
+		$char: "\E005";
+	}
+	@if $filename == nh {
+		$char: "\E006";
+	}
+	@if $filename == phone {
+		$char: "\E007";
+	}
+	@if $filename == report {
+		$char: "\E008";
+	}
+	@if $filename == right {
+		$char: "\E009";
+	}
+
+	@return $char;
+}
+
+@mixin ico($filename, $insert: before, $extend: true) {
+	&:#{$insert} {
+		@if $extend {
+			@extend %ico;
+		} @else {
+			@include ico-styles;
+		}
+		content: ico-char($filename);
+	}
+}
+
+.ico-cell {
+	@include ico(cell);
+}
+.ico-close {
+	@include ico(close);
+}
+.ico-email {
+	@include ico(email);
+}
+.ico-in {
+	@include ico(in);
+}
+.ico-left {
+	@include ico(left);
+}
+.ico-nh {
+	@include ico(nh);
+}
+.ico-phone {
+	@include ico(phone);
+}
+.ico-report {
+	@include ico(report);
+}
+.ico-right {
+	@include ico(right);
+}
+

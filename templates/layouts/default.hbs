@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="lt">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" type="image/ico" href="favicon.ico" />
+		<title>{{title}}</title>
+		<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700&amp;subset=latin-ext" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400&subset=latin-ext" rel="stylesheet" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<!-- MENU -->
+		<div class="l-menu">
+			{{> menu }}
+		</div><!-- /MENU -->
+		
+		<!-- MAIN -->
+		<div class="l-main container-fluid{{#if classMain}} {{classMain}}{{/if}}"{{#if bgMain}} style="background-image: url({{bgMain}})"{{/if}}>
+			{% body %}
+		</div> <!-- /MAIN -->
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
