@@ -1,0 +1,37 @@
+.footer {
+	color: #999;
+	padding: 30px 70px;
+	a {
+		color: $blue;
+		&:hover {
+			color: $navhvr;
+		}
+	}
+	p, a {
+		font-size: 13px;
+		line-height: 1.6em;
+		text-decoration: none;
+		text-align: center;
+		font-weight: 300;
+	}
+	div:first-child {
+		margin-bottom: 25px;
+	}
+	@include media-breakpoint-up(sm) {
+		padding: 50px 70px;
+		height: 125px;
+		p, a {
+			font-size: 16px;
+		}
+		p {
+			display: inline;
+		}
+		div {
+			width: 50%;
+			float: left;
+			&:last-child {
+				text-align: right;
+			}
+		}
+	}
+}

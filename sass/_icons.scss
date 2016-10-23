@@ -25,32 +25,17 @@
 @function ico-char($filename) {
 	$char: "";
 
-	@if $filename == cell {
+	@if $filename == bplane {
 		$char: "\E001";
 	}
-	@if $filename == close {
+	@if $filename == down {
 		$char: "\E002";
 	}
-	@if $filename == email {
+	@if $filename == logo {
 		$char: "\E003";
 	}
-	@if $filename == in {
+	@if $filename == plane {
 		$char: "\E004";
-	}
-	@if $filename == left {
-		$char: "\E005";
-	}
-	@if $filename == nh {
-		$char: "\E006";
-	}
-	@if $filename == phone {
-		$char: "\E007";
-	}
-	@if $filename == report {
-		$char: "\E008";
-	}
-	@if $filename == right {
-		$char: "\E009";
 	}
 
 	@return $char;
@@ -67,31 +52,16 @@
 	}
 }
 
-.ico-cell {
-	@include ico(cell);
+.ico-bplane {
+	@include ico(bplane);
 }
-.ico-close {
-	@include ico(close);
+.ico-down {
+	@include ico(down);
 }
-.ico-email {
-	@include ico(email);
+.ico-logo {
+	@include ico(logo);
 }
-.ico-in {
-	@include ico(in);
-}
-.ico-left {
-	@include ico(left);
-}
-.ico-nh {
-	@include ico(nh);
-}
-.ico-phone {
-	@include ico(phone);
-}
-.ico-report {
-	@include ico(report);
-}
-.ico-right {
-	@include ico(right);
+.ico-plane {
+	@include ico(plane);
 }
 

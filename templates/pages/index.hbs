@@ -1,39 +1,64 @@
 ---
 layout: default.hbs
-title: Baltic Horizon
-bgMain: "img/tvs/bg-home.png"
+title: Testio
 classMain: "home"
 ---
 
-<div class="home-swiper swiper-container row">
-	<div class="swiper-wrapper">
-		<div class="swiper-slide">
-			<div class="vertical-middle">
-				<div class="col-md-5 offset-md-2">
-					<h2>Europa</h2>
-					<p>The Europa centre is the trendiest and second largest shopping facility of its kind in Vilnius, the Lithuanian capital. This modern centre is part of the developments in the city centre, less than a 10-minute walk from the Old Town.</p>
-					<a href="#" class="btn btn-outline-white">More</a>
-				</div>
+<div class="main-hero" style="background-image: url(img/sys/bg.jpg)">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-7 offset-xl-1">
+				<h1>Test Your Front-End Dev's Skills &amp; Experience</h1>
+				<h2>Hiring a Front-End Developer. Get to know his capabilities with simple Testio task.</h2>
+				<a class="btn-cta">CHECK PRICING</a>
+				<a href="#features" class="btn-go"><span class="ico-down"></span></a>
 			</div>
-		</div>
-		<div class="swiper-slide">
-			<div class="vertical-middle">
-				<div class="col-md-5 offset-md-2">
-					<h2>Europa</h2>
-					<p>The Europa centre is the trendiest and second largest shopping facility of its kind in Vilnius, the Lithuanian capital. This modern centre is part of the developments in the city centre, less than a 10-minute walk from the Old Town.</p>
-					<a href="#" class="btn btn-outline-white">More</a>
-				</div>
-			</div>
-		</div>
-		<div class="swiper-slide">
-			<div class="vertical-middle">
-				<div class="col-md-5 offset-md-2">
-					<h2>Europa</h2>
-					<p>The Europa centre is the trendiest and second largest shopping facility of its kind in Vilnius, the Lithuanian capital. This modern centre is part of the developments in the city centre, less than a 10-minute walk from the Old Town.</p>
-					<a href="#" class="btn btn-outline-white">More</a>
-				</div>
+			<div class="col-md-5 col-xl-4">
+				<div class="main-hero-phn" style="background-image: url('img/sys/phn.png');"><div></div></div>
 			</div>
 		</div>
 	</div>
-	<div class="swiper-pagination"></div>
+</div>
+
+<div id="features" class="main-ftrs">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h2>Features</h2>
+				<p class="main-ftrs-desc">We Bring You The Best Solutions On The Market</p>
+			</div>
+		</div>
+		<div class="row">
+			{{#each ftrs}}
+				<div class="main-ftrs-itm col-md-6 col-xl-4 offset-xl-1">
+					<img src="img/ico/{{icon}}.svg">
+					<h3>{{name}}</h3>
+					<p>{{text}}</p>
+				</div>
+			{{/each}}
+		</div>
+	</div>
+</div>
+
+<div id="pricing" class="main-prcs" style="background-image: url(img/sys/bg2.jpg)">
+	<div class="main-prcs__container">
+		<div class="row">
+			<h2>Pricing</h2>
+			<h4>Pick a Plan</h4>
+
+			<div class="main-prcs-plan">
+				<i class="ico-plane"></i>
+				<h3>$99<span>/m</span></h3>
+				<p>Monthly</p>
+				<a class="btn-cta">TRY NOW</a>
+			</div>
+			<div class="main-prcs-plan main-prcs-plan--bright">
+				<i class="ico-bplane"></i>
+				<h3>$30<span>/m</span></h3>
+				<p><span>$1188</span> $360 Billed Anually</p>
+				<a class="btn-cta">TRY NOW</a>
+			</div>
+			<p><span class="ico-logo"></span> No limits for bandwidth speed, traffic, connections.</p>
+		</div>
+	</div>
 </div>

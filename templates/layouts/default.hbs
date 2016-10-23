@@ -6,20 +6,37 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="icon" type="image/ico" href="favicon.ico" />
 		<title>{{title}}</title>
-		<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700&amp;subset=latin-ext" rel="stylesheet" />
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400&subset=latin-ext" rel="stylesheet" />
-		<link rel="stylesheet" href="css/style.css" />
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet"> 
+		<link rel="stylesheet" href="css/style.css"/>
 	</head>
 	<body>
+		<div id="fb-root"></div>
+		<script>
+			(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
 		<!-- MENU -->
-		<div class="l-menu">
-			{{> menu }}
-		</div><!-- /MENU -->
+		<nav class="nav">
+			{{> nav }}
+		</nav>
+		<!-- /MENU -->
 		
 		<!-- MAIN -->
-		<div class="l-main container-fluid{{#if classMain}} {{classMain}}{{/if}}"{{#if bgMain}} style="background-image: url({{bgMain}})"{{/if}}>
+		<div class="main">
 			{% body %}
-		</div> <!-- /MAIN -->
+		</div>
+		<!-- /MAIN -->
+
+		<!-- FOOTER -->
+		<footer class="footer">
+			{{> footer }}
+		</footer>
+		<!-- /FOOTER -->
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 		<script src="js/main.js"></script>

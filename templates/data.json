@@ -1,7 +1,24 @@
 {
-	"timeline": [
+	"ftrs": [
 		{
-			"a": "a"
+			"icon": "1",
+			"name": "Great Speed",
+			"text": "Vestibulum consequat metus sed dictum sagittis. Fusce at luctus libero, vel mollis velit. Nunc elementum velit justo, lobortis facilisis orci congua."
+		},
+		{
+			"icon": "2",
+			"name": "Unlimited Projects",
+			"text": "Donec mollis nisi vel lorem laoreet, eget venenatis lorem sagittis. Praesent ullamcorper odio id gravida semper. Vivamus a fermentum neque, id pretium diam. "
+		},
+		{
+			"icon": "3",
+			"name": "Recording Videos",
+			"text": "Ut interdum interdum placerat. Phasellus ultrices iaculis metus, a congue ex cursus eget. Nullam at sem ullamcorper, condimentum lectus sit amet, luctus elit. "
+		},
+		{
+			"icon": "4",
+			"name": "Circular Motion",
+			"text": "Duis tempor eros augue, efficitur tempor ipsum maximus sed. Donec est est, auctor elementum leo a, euismod molestie purus. Proin eget magna non mi vestibulum."
 		}
 	]
 }

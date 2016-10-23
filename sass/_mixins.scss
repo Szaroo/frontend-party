@@ -1,47 +1,3 @@
-@mixin container() {
-	display: block;
-	width: auto;
-	min-height: 1px;
-	@include clearfix;
-	@media (min-width: $container-max-width) {
-		width: $container-max-width;    
-		margin: 0 auto;
-	}
-}
-@mixin button-variant($color, $background, $border) {
-	color: $color;
-	background-color: $background;
-	border-color: $border;
-
-	&:hover,
-	&:focus,
-	&.focus,
-	&:active,
-	&.active {
-		// color: $color;
-		background-color: darken($background, 10%);
-		//     border-color: darken($border, 12%);
-		@include text-shadow(1px 1px 0px rgba(1, 1, 1, 0.1));
-	}
-	&:active,
-	&.active {
-		background-image: none;
-	}
-	&.disabled,
-	&[disabled],
-	fieldset[disabled] & {
-		&,
-		&:hover,
-		&:focus,
-		&.focus,
-		&:active,
-		&.active {
-			background-color: $background;
-					border-color: $border;
-		}
-	}
-}
-
 @mixin clearfix() {
 	&:before,
 	&:after {
@@ -71,7 +27,7 @@
 		width: 100%;
 		padding-top: ($height / $width) * 100%;
 	}
-	> .az-inner-box {
+	> div {
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -79,10 +35,4 @@
 		height: 100%;
 		padding: 10px 10px 0 0;
 	}
-}
-
-$browser-context: 16; // Default
-
-@function em($pixels, $context: $browser-context) {
-	@return #{$pixels/$context}rem
 }

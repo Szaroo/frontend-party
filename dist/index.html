@@ -6,58 +6,140 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="icon" type="image/ico" href="favicon.ico" />
-	<title>Baltic Horizon</title>
-	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700&amp;subset=latin-ext" rel="stylesheet" />
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400&subset=latin-ext" rel="stylesheet" />
+	<title>Testio</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
+	<div id="fb-root"></div>
+	<script>
+		(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+	</script>
 	<!-- MENU -->
-	<div class="l-menu">
-		<div>
-
+	<nav class="nav">
+		<a href="index.html" id="logo">
+			<img id="logo-bright" src="img/sys/logo.png">
+			<img id="logo-dark" src="img/sys/logodark.png">
+		</a>
+		<div class="menu-call-m">
+			<span></span>
+			<span></span>
+			<span></span>
 		</div>
-	</div>
+		<div class="menu-mob-wrap">
+			<div class="menu-fb">
+				<div class="fb-like" data-href="http://rucinskas.lt" data-width="100" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+			</div>
+			<ul class="menu">
+				<li class="menu-itm"><a href="#features">Features</a>
+				</li>
+				<li class="menu-itm"><a href="#pricing">Pricing</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
 	<!-- /MENU -->
 
 	<!-- MAIN -->
-	<div class="l-main container-fluid home" style="background-image: url(img/tvs/bg-home.png)">
-		<div class="home-swiper swiper-container row">
-			<div class="swiper-wrapper">
-				<div class="swiper-slide">
-					<div class="vertical-middle">
-						<div class="col-md-5 offset-md-2">
-							<h2>Europa</h2>
-							<p>The Europa centre is the trendiest and second largest shopping facility of its kind in Vilnius, the Lithuanian capital. This modern centre is part of the developments in the city centre, less than a 10-minute walk from the Old Town.</p>
-							<a href="#" class="btn btn-outline-white">More</a>
-						</div>
+	<div class="main">
+		<div class="main-hero" style="background-image: url(img/sys/bg.jpg)">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7 offset-xl-1">
+						<h1>Test Your Front-End Dev's Skills &amp; Experience</h1>
+						<h2>Hiring a Front-End Developer. Get to know his capabilities with simple Testio task.</h2>
+						<a class="btn-cta">CHECK PRICING</a>
+						<a href="#features" class="btn-go"><span class="ico-down"></span></a>
 					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="vertical-middle">
-						<div class="col-md-5 offset-md-2">
-							<h2>Europa</h2>
-							<p>The Europa centre is the trendiest and second largest shopping facility of its kind in Vilnius, the Lithuanian capital. This modern centre is part of the developments in the city centre, less than a 10-minute walk from the Old Town.</p>
-							<a href="#" class="btn btn-outline-white">More</a>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="vertical-middle">
-						<div class="col-md-5 offset-md-2">
-							<h2>Europa</h2>
-							<p>The Europa centre is the trendiest and second largest shopping facility of its kind in Vilnius, the Lithuanian capital. This modern centre is part of the developments in the city centre, less than a 10-minute walk from the Old Town.</p>
-							<a href="#" class="btn btn-outline-white">More</a>
+					<div class="col-md-5 col-xl-4">
+						<div class="main-hero-phn" style="background-image: url('img/sys/phn.png');">
+							<div></div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="swiper-pagination"></div>
+		</div>
+
+		<div id="features" class="main-ftrs">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<h2>Features</h2>
+						<p class="main-ftrs-desc">We Bring You The Best Solutions On The Market</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="main-ftrs-itm col-md-6 col-xl-4 offset-xl-1">
+						<img src="img/ico/1.svg">
+						<h3>Great Speed</h3>
+						<p>Vestibulum consequat metus sed dictum sagittis. Fusce at luctus libero, vel mollis velit. Nunc elementum velit justo, lobortis facilisis orci congua.</p>
+					</div>
+					<div class="main-ftrs-itm col-md-6 col-xl-4 offset-xl-1">
+						<img src="img/ico/2.svg">
+						<h3>Unlimited Projects</h3>
+						<p>Donec mollis nisi vel lorem laoreet, eget venenatis lorem sagittis. Praesent ullamcorper odio id gravida semper. Vivamus a fermentum neque, id pretium diam.</p>
+					</div>
+					<div class="main-ftrs-itm col-md-6 col-xl-4 offset-xl-1">
+						<img src="img/ico/3.svg">
+						<h3>Recording Videos</h3>
+						<p>Ut interdum interdum placerat. Phasellus ultrices iaculis metus, a congue ex cursus eget. Nullam at sem ullamcorper, condimentum lectus sit amet, luctus elit.</p>
+					</div>
+					<div class="main-ftrs-itm col-md-6 col-xl-4 offset-xl-1">
+						<img src="img/ico/4.svg">
+						<h3>Circular Motion</h3>
+						<p>Duis tempor eros augue, efficitur tempor ipsum maximus sed. Donec est est, auctor elementum leo a, euismod molestie purus. Proin eget magna non mi vestibulum.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="pricing" class="main-prcs" style="background-image: url(img/sys/bg2.jpg)">
+			<div class="main-prcs__container">
+				<div class="row">
+					<h2>Pricing</h2>
+					<h4>Pick a Plan</h4>
+
+					<div class="main-prcs-plan">
+						<i class="ico-plane"></i>
+						<h3>$99<span>/m</span></h3>
+						<p>Monthly</p>
+						<a class="btn-cta">TRY NOW</a>
+					</div>
+					<div class="main-prcs-plan main-prcs-plan--bright">
+						<i class="ico-bplane"></i>
+						<h3>$30<span>/m</span></h3>
+						<p><span>$1188</span> $360 Billed Anually</p>
+						<a class="btn-cta">TRY NOW</a>
+					</div>
+					<p><span class="ico-logo"></span> No limits for bandwidth speed, traffic, connections.</p>
+				</div>
+			</div>
 		</div>
 
 	</div>
 	<!-- /MAIN -->
+
+	<!-- FOOTER -->
+	<footer class="footer">
+		<div>
+			<p>Copyright &copy; <a href="#">Testio.</a>
+			</p>
+			<p>All right reserved</p>
+		</div>
+		<div>
+			<p>
+				<a href="#">Explore Testio.</a>
+			</p>
+		</div>
+	</footer>
+	<!-- /FOOTER -->
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="js/main.js"></script>
